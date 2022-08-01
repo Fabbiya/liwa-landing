@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Menu from "./components/Menu/Menu";
+import MainSection from "./components/MainSection/MainSection";
+import DownloadBar from "./components/DownloadBar/DownloadBar";
+import ServiceSection from "./components/ServiceSection/ServiceSection";
+import SupportSection from "./components/SupportSection/SupportSection";
+import { Col, Row } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Menu />
+      <MainSection />
+      <DownloadBar />
+      <ServiceSection />
+      <SupportSection />
+      <footer className="bg-secondary">
+        <Row>
+          <Col lg={6}>
+            <p className="text-center my-0 py-0"><small>All rights reserved for Dar Al Khayam General Trading LLC</small></p>
+          </Col>
+          <Col lg={6}>
+            <p className="text-center my-0 py-0"><small>Designed and developed by @webdevelopmentuae.com</small></p>
+          </Col>
+        </Row>
+      </footer>
     </div>
   );
 }
