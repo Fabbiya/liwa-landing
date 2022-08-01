@@ -7,32 +7,40 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function SupportSection() {
   return (
     <div
-      style={{ backgroundImage: `url(${imgSupport})` , backgroundSize:"cover", display: "block" , minHeight:"100vh", verticalAlign:"middle"}}
+      style={{ backgroundImage: `url(${imgSupport})` , backgroundSize:"cover", display: "block" , minHeight:"100vh", verticalAlign:"middle", backgroundPosition:"center"}}
       className=" w-100 py-5"
       id="support"
     >
-      <Container style={{height:"30vh"}}>
+ 
+      <Container style={{marginTop:"30vh"}}>
         <Row>
           <Col lg={7}></Col>
           <Col lg={5} className="py-5 my-auto">
             <div>
-              <h2 className="text-center">Do you have any question?</h2>
-              <p className="text-center">Talk to our professional support team to get best result</p>
+              <h2 className="text-center text-light">Do you have any question?</h2>
+              <p className="text-center text-light">Talk to our professional support team to get best result</p>
             </div>
-            <div className="d-flex">
-              <img
+            <Container>
+              <Row>
+                <Col>
+                <img
                 src={googlePlay}
                 alt="Download from google play"
                 className="img-fluid ms-auto me-2 ms-auto"
-                style={{ maxWidth: "276px" }}
+             
               />
-              <img
+              
+                </Col>
+                <Col >
+                <img
                 src={appstore}
                 alt="Download from appstore"
                 className="img-fluid me-0"
-                style={{ maxWidth: "276px" }}
+              
               />
-            </div>
+                </Col>
+              </Row>
+            </Container>
           </Col>
         </Row>
       </Container>

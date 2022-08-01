@@ -1,0 +1,10 @@
+.serviceImg{
+    content:url("./../../assets/images/services.png");
+}
+
+@media (max-width: 991.98px) {
+    .serviceImg{
+        content:url("./../../assets/images/servicesMobile.png");
+        
+    }
+}

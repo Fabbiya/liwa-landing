@@ -17,10 +17,10 @@ function App() {
       <footer className="bg-secondary">
         <Row>
           <Col lg={6}>
-            <p className="text-center my-0 py-0"><small>All rights reserved for Dar Al Khayam General Trading LLC</small></p>
+            <p className="text-center my-0 py-0" style={{fontSize:"9px"}}><small>All rights reserved for Dar Al Khayam General Trading LLC</small></p>
           </Col>
           <Col lg={6}>
-            <p className="text-center my-0 py-0"><small>Designed and developed by @webdevelopmentuae.com</small></p>
+            <p className="text-center my-0 py-0" style={{fontSize:"9px"}}><small>Designed and developed by @webdevelopmentuae.com</small></p>
           </Col>
         </Row>
       </footer>

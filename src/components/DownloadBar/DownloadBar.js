@@ -13,18 +13,28 @@ export default function DownloadBar() {
             </h5>
           </Col>
           <Col className="me-0 pe-0" lg={6}>
-            <img
+            <Container>
+              <Row>
+                <Col>
+                <img
               src={googlePlay}
               alt="Download from google play"
               className="img-fluid ms-auto me-2 ms-auto"
-              style={{ maxWidth: "276px" }}
+              
             />
-            <img
+                </Col>
+                <Col>
+                <img
               src={appstore}
               alt="Download from appstore"
               className="img-fluid me-0"
-              style={{ maxWidth: "276px" }}
+             
             />
+                </Col>
+              </Row>
+            </Container>
+            
+            
           </Col>
         </Row>
       </Container>
