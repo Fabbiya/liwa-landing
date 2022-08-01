@@ -131,7 +131,7 @@ export default function ServiceSection() {
           </Col>
           <Col className="my-auto">
             <h6 className="text-center">Stuck in the road and need assistance? </h6>
-            <Container className="d-none d-inline-block">
+            <Container className="d-none d-lg-inline-block">
             <Row>
                 {roadAssist.map((item,idx)=>{
                     return (
